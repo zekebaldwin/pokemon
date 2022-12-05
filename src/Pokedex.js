@@ -15,9 +15,9 @@ const Pokedex = () => {
     <div>
       {names.map((i) => {
         return (
-          <ul>
+          <ul key={i.id}>
             <li>
-              <Pokemon key={i.id} id={i.id} name={i.name} type={i.type} />
+              <Pokemon id={i.id} name={i.name} type={i.type} />
             </li>
           </ul>
         );
